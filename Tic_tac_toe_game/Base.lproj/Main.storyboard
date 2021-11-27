@@ -139,13 +139,37 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tic TAC toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-L8-2W3">
+                                <rect key="frame" x="102" y="60" width="210" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Ebm-Yr-xjk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="cNk-Rc-raV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGJ-1t-bpp">
+                                <rect key="frame" x="170" y="147" width="74" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="Ny1-i7-cbu"/>
+                                    <constraint firstAttribute="height" constant="33" id="a1L-7X-XwB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="JDt-L8-2W3" firstAttribute="centerX" secondItem="hwM-2J-TgK" secondAttribute="centerX" id="1gO-Z5-60R"/>
+                            <constraint firstItem="JDt-L8-2W3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="6sq-5a-74k"/>
+                            <constraint firstItem="NGJ-1t-bpp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SfM-lI-YiA"/>
                             <constraint firstItem="hwM-2J-TgK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="XUA-zo-lSK"/>
                             <constraint firstItem="hwM-2J-TgK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ktE-sE-6oz"/>
                             <constraint firstItem="hwM-2J-TgK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.377232" id="r1g-I6-UsD"/>
+                            <constraint firstItem="NGJ-1t-bpp" firstAttribute="top" secondItem="JDt-L8-2W3" secondAttribute="bottom" constant="20" id="xNV-sq-qtw"/>
                             <constraint firstItem="hwM-2J-TgK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yaY-6N-lKI"/>
                         </constraints>
                     </view>
@@ -159,6 +183,7 @@
                         <outlet property="C1_button" destination="b5Z-eP-siU" id="Dck-RX-BXe"/>
                         <outlet property="C2_button" destination="UTr-BE-RLx" id="P8v-oY-oTD"/>
                         <outlet property="C3_button" destination="LcW-pj-sEt" id="wdp-F1-SKl"/>
+                        <outlet property="Turn_label" destination="NGJ-1t-bpp" id="HE1-KI-w8L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
